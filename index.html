@@ -5,86 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de vida</title>
     <style>
-        body{
+        body {
             font-family: Arial, sans-serif;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        .section{
+        .section {
             margin-bottom: 20px;
         }
         .section h2 {
             text-decoration: underline;
         }
-        .contact-info, .about, .skills, .work-experience, .education{
-            margin-left: 20px;
+        .left-column, .right-column {
+            background-color: #daf0f5;
+            padding: 10px;
+        }
+        .left-column {
+            width: 50%;
+        }
+        .right-column {
+            width: 50%;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            text-align: justify;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: justify;
+        }
+        th {
+            background-color: #e5ddcf;
         }
     </style>
-
 </head>
 <body>
-    
-    <body style="background-color: grey;">
-        <div style="display: flex;">
-    <table style="background-color: #e5ddcf;">
+    <table>
         <tr>
-            <td style="background-color: #daf0f5;">
-              <div class="informacion-contacto">
+            <td class="left-column">
+                <div class="contact-info">
                     <h2>Información de contacto</h2>
                     <p>Miguel Angel Gonzalez Maldonado</p>
                     <p>Teléfono: 3167615445</p>
                     <p>Correo: Miguis722@gmail.com</p>
                     <p>Github: <a href="https://github.com/Miguis722">Miguis722</a></p>
                 </div>
-        </tr>
-    </td>
-        <tr>
-            <td style="background-color: #daf0f5;">
-                <div class="Acercade">
-                    <h2>Sobre mí</h2>
-                    <justify><p>Estudiante de programación, especializado en el desarrollo de backend para aplicaciones web. Mi constante búsqueda de conocimiento me motivan a alcanzar nuevas metas, resolver problemas de manera eficiente y adaptarme fácilmente a los cambios.</p></justify>
-                </div>
-        </tr>
             </td>
+            <td class="right-column">
+                <div class="about">
+                    <h2>Sobre mí</h2>
+                    <p>Estudiante de programación, especializado en el desarrollo de backend para aplicaciones web. Mi constante búsqueda de conocimiento me motivan a alcanzar nuevas metas, resolver problemas de manera eficiente y adaptarme fácilmente a los cambios.</p>
+                </div>
+            </td>
+        </tr>
         <tr>
-            <td style="background-color: #daf0f5;">
-                <div class="mishabilidades">
+            <td class="left-column">
+                <div class="skills">
                     <h2>Habilidades</h2>
                     <ul>
                         <li>Python</li>
                         <li>HTML</li>
                     </ul>
                 </div>
-        </tr>
             </td>
-        <tr>
-            <td style="background-color: #daf0f5;">
+            <td class="right-column">
                 <div class="competencias">
                     <h2>Competencias</h2>
                     <ul>
                         <li>Resolución de problemas</li>
-                        <li>Comunicación acertiva</li>
+                        <li>Comunicación asertiva</li>
                         <li>Trabajo en equipo</li>                        
                         <li>Adaptabilidad</li>            
                     </ul>
                 </div>
-        </tr>
             </td>
+        </tr>
         <tr>
-            <td style="background-color: #daf0f5;">
-                <div class="Estudios">
-                    <h2>Educacion</h2>
+            <td class="left-column" colspan="2">
+                <div class="education">
+                    <h2>Educación</h2>
                     <ul>
-                        <li>Instituto Empresarial Gabriela Mistral - Tecnico en Asesoria Comercial - 2023</li>
-                        <li>SENA - Tecnico en Asesoria Comercial - 2023</li>
+                        <li>Instituto Empresarial Gabriela Mistral - Técnico en Asesoría Comercial - 2023</li>
+                        <li>SENA - Técnico en Asesoría Comercial - 2023</li>
                     </ul>
                 </div>
+            </td>
         </tr>
-        
-
-
-
-
-
     </table>
-    </body>
 </body>
 </html>
