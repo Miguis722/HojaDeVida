@@ -32,7 +32,7 @@
 .left-side {
     display: flex;
     flex-direction: column;
-    background-color: #9AA0A6;
+    background-color: #c3c7ca;
 }
 
 .left-side {
@@ -43,4 +43,34 @@
 .right-side {
     width: 45%;
     padding: 10px;
+}
+
+.phone,
+.email,
+.location,
+.linkedin,
+.github,
+.python,
+.html,
+.css,
+.Javascript {
+    width: 5%;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.tecnology-skills li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+hr {
+    border-color: #000;
 }
